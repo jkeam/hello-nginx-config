@@ -1,0 +1,12 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+namespace: hello
+resources:
+  - deployment.yaml
+  - service.yaml
+  - route.yaml
+images:
+  - name: nginx-image
+    newName: docker.io/nginxinc/nginx-unprivileged
+    newTag: 1.24.0
+    # newTag: 1.25.3

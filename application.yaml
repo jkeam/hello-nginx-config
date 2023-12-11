@@ -1,0 +1,18 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: hello-node
+  namespace: openshift-gitops
+spec:
+  project: default
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: hello
+  source:
+    path: base
+    repoURL: https://github.com/jkeam/hello-nginx-config.git
+    targetRevision: test
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
