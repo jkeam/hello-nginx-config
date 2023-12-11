@@ -11,7 +11,7 @@ spec:
   source:
     path: base
     repoURL: https://github.com/jkeam/hello-nginx-config.git
-    targetRevision: test
+    targetRevision: develop
   syncPolicy:
     automated:
       prune: true
