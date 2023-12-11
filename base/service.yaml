@@ -4,7 +4,8 @@ metadata:
   name: hello-nginx-svc
 spec:
   ports:
-  - port: 8080
+  - name: 18080-port
+    port: 18080
     targetPort: nginx-port
   selector:
     app: hello-nginx
