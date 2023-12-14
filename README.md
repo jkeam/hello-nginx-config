@@ -4,7 +4,7 @@ Nginx config for simple hello project.
 
 ## Prerequisite
 1. OpenShift 4.x cluster with admin access
-2. OpenShift GitOps 1.11.x
+2. OpenShift GitOps 1.11.x - [Installation instructions here](https://docs.openshift.com/gitops/1.11/installing_gitops/installing-openshift-gitops.html)
 
 ## Setup
 
