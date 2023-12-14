@@ -8,5 +8,5 @@ resources:
 images:
   - name: nginx-image
     newName: docker.io/nginxinc/nginx-unprivileged
-    # newTag: 1.24.0
-    newTag: 1.25.3
+    newTag: 1.24.0
+    # newTag: 1.25.3
